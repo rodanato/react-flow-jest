@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: App should match its empty snapshot 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <img
+      alt="logo"
+      className="App-logo"
+      src="logo.svg"
+    />
+    <h1
+      className="App-title"
+    >
+      Welcome to React
+    </h1>
+  </header>
+  <p
+    className="App-intro"
+  >
+    To get started, edit 
+    <code>
+      src/App.js
+    </code>
+     and save to reload.
+  </p>
+  <h2>
+    uno
+  </h2>
+  <h2>
+    223
+  </h2>
+</div>
+`;
