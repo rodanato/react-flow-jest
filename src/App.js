@@ -42,7 +42,9 @@ class App extends Component<Props, State> {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
 
-        {this.state.list.map((item, i) => <h2 key={i}>{item}</h2>)}
+        <div className="list-container">
+          {this.state.list.length > 0 && this.state.list.map((item, i) => <h2 className={'list-item'} key={i}>{item}</h2>)}
+        </div>
 
         <Box/>
       </div>

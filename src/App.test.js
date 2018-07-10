@@ -9,7 +9,7 @@ import Box from './box.component';
 configure({ adapter: new Adapter() });
 
 describe('Component: App', () => {
-  const items = ['Learn react', 'rest', 'go out'];
+  const items = ['uno', '223'];
   const comp = shallow(<App />);
 
   it('should match its empty snapshot', () => {
@@ -22,6 +22,26 @@ describe('Component: App', () => {
 
   it('should render the Box Component', () => {
     expect(comp.containsMatchingElement(<Box />)).toEqual(true);
+  });
+
+  it('List length should be ok',() => {
+    expect(comp.find('.list-item').length).toEqual(items.length);
+  });
+
+  it('Every list item has the right content', () => {
+    comp
+      .find('.list-item')
+      .forEach((node, i) => {
+        expect(node.text()).toEqual(items[i]);
+      });
+  });
+
+  it('loadItemsToList should fill the empty list', () => {
+    let newList = [];
+    expect(newList.length).toEqual(0);
+
+    newList = comp.instance().loadItemstoList([]);
+    expect(newList.length).toEqual(2);
   });
 
   // it('should add an item based on the value in the state', () => {

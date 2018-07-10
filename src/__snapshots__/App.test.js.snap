@@ -41,14 +41,20 @@ ShallowWrapper {
           </code>
            and save to reload.
 </p>,
-        Array [
-          <h2>
-            uno
-</h2>,
-          <h2>
-            223
-</h2>,
-        ],
+        <div
+          className="list-container"
+>
+          <h2
+                    className="list-item"
+          >
+                    uno
+          </h2>
+          <h2
+                    className="list-item"
+          >
+                    223
+          </h2>
+</div>,
         <Unknown />,
       ],
       "className": "App",
@@ -138,25 +144,51 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "0",
+        "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "uno",
+          "children": Array [
+            <h2
+              className="list-item"
+>
+              uno
+</h2>,
+            <h2
+              className="list-item"
+>
+              223
+</h2>,
+          ],
+          "className": "list-container",
         },
         "ref": null,
-        "rendered": "uno",
-        "type": "h2",
-      },
-      Object {
-        "instance": null,
-        "key": "1",
-        "nodeType": "host",
-        "props": Object {
-          "children": "223",
-        },
-        "ref": null,
-        "rendered": "223",
-        "type": "h2",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": "uno",
+              "className": "list-item",
+            },
+            "ref": null,
+            "rendered": "uno",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": "223",
+              "className": "list-item",
+            },
+            "ref": null,
+            "rendered": "223",
+            "type": "h2",
+          },
+        ],
+        "type": "div",
       },
       Object {
         "instance": null,
@@ -200,14 +232,20 @@ ShallowWrapper {
             </code>
              and save to reload.
 </p>,
-          Array [
-            <h2>
-              uno
-</h2>,
-            <h2>
-              223
-</h2>,
-          ],
+          <div
+            className="list-container"
+>
+            <h2
+                        className="list-item"
+            >
+                        uno
+            </h2>
+            <h2
+                        className="list-item"
+            >
+                        223
+            </h2>
+</div>,
           <Unknown />,
         ],
         "className": "App",
@@ -297,25 +335,51 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "0",
+          "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "uno",
+            "children": Array [
+              <h2
+                className="list-item"
+>
+                uno
+</h2>,
+              <h2
+                className="list-item"
+>
+                223
+</h2>,
+            ],
+            "className": "list-container",
           },
           "ref": null,
-          "rendered": "uno",
-          "type": "h2",
-        },
-        Object {
-          "instance": null,
-          "key": "1",
-          "nodeType": "host",
-          "props": Object {
-            "children": "223",
-          },
-          "ref": null,
-          "rendered": "223",
-          "type": "h2",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": "uno",
+                "className": "list-item",
+              },
+              "ref": null,
+              "rendered": "uno",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": "223",
+                "className": "list-item",
+              },
+              "ref": null,
+              "rendered": "223",
+              "type": "h2",
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,
