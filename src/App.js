@@ -3,6 +3,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Box from './box.component';
 
 type Props = {};
 
@@ -42,6 +43,8 @@ class App extends Component<Props, State> {
         </p>
 
         {this.state.list.map((item, i) => <h2 key={i}>{item}</h2>)}
+
+        <Box/>
       </div>
     );
   }
